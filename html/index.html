@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebRTCConnection Test</title>
+	<style>
+		video { width: 400px; height: 300px; margin: 5px; }
+		video { background-color: #000; }
+		body > div { width: 100%; margin: auto; text-align: center; }
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<input placeholder="name" id="nameInput">
+			<input placeholder="keyword" id="keywordInput">
+			<button id="connectButton">接続</button>
+			<button id="disconnectButton" disabled>切る</button>
+			<button id="showButton" >表示</button>
+		</div>
+		<video id = "localVideo" autoplay controls playsinline muted></video>
+		<video id = "remoteVideo_1" autoplay controls playsinline muted  ></video>
+		<video id = "remoteVideo_2" autoplay controls playsinline muted></video>
+		<video id= "remoteVideo_3" autoplay controls playsinline muted></video>
+		<div>
+
+<script src="./VideoChat.js"></script>
+</body>
+</html>
